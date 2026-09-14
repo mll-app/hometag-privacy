@@ -1,6 +1,6 @@
 # HomeTag Website
 
-Public, static site for the HomeTag app — hosted via GitHub Pages, no build step. Intentionally contains only these pages, separate from the app's own source code, which stays private elsewhere.
+Public, static site for the HomeTag app, hosted via GitHub Pages with no build step. Intentionally contains only these pages, separate from the app's own source code, which stays private elsewhere.
 
 ## Pages
 
