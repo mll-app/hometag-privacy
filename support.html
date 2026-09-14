@@ -1,0 +1,108 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>HomeTag Support</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=Source+Sans+3:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+
+<div class="page">
+  <header class="masthead">
+    <a class="brand" href="marketing.html">
+      <div class="brand-mark"><img src="icon.png" alt="HomeTag" style="width:100%;height:100%;object-fit:cover;border-radius:10px"></div>
+      <div class="brand-text">
+        <span class="brand-name">HomeTag <span data-lang-content="zh">收納尋寶</span></span>
+        <span class="brand-sub"><span data-lang-content="zh">支援</span><span data-lang-content="en">Support</span></span>
+      </div>
+    </a>
+    <nav class="site-nav">
+      <a href="marketing.html"><span data-lang-content="zh">關於</span><span data-lang-content="en">About</span></a>
+      <a href="support.html" aria-current="page"><span data-lang-content="zh">支援</span><span data-lang-content="en">Support</span></a>
+      <a href="index.html"><span data-lang-content="zh">政策</span><span data-lang-content="en">Policies</span></a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" id="btn-zh" aria-pressed="true">中文</button>
+      <button type="button" id="btn-en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <div class="simple-page">
+    <h1 class="lede" style="margin-top:40px" data-lang-content="zh">支援</h1>
+    <h1 class="lede" style="margin-top:40px" data-lang-content="en">Support</h1>
+    <p class="standfirst" data-lang-content="zh">使用上遇到問題，或有功能上的建議？我們很樂意聽到你的回饋。</p>
+    <p class="standfirst" data-lang-content="en">Running into a problem, or have a feature suggestion? We'd genuinely like to hear it.</p>
+
+    <div class="callout" style="margin-top:8px">
+      <strong data-lang-content="zh">聯絡方式：</strong><strong data-lang-content="en">Contact:</strong>
+      <a href="mailto:hometag_app@icloud.com">hometag_app@icloud.com</a>
+    </div>
+
+    <section class="doc-section" style="margin-top:40px">
+      <div class="section-head">
+        <h2><span data-lang-content="zh">常見問題</span><span data-lang-content="en">Frequently Asked Questions</span></h2>
+      </div>
+
+      <div class="faq-item">
+        <h3 data-lang-content="zh">如何邀請家人一起使用？</h3>
+        <h3 data-lang-content="en">How do I invite a family member?</h3>
+        <p data-lang-content="zh">到「設定」→「成員與裝置」，產生一個邀請連結分享給對方即可。免費版最多 1 位成員，訂閱後可再多邀請 1 位。</p>
+        <p data-lang-content="en">Go to Settings → Members &amp; Devices, and generate an invite link to share. The free tier allows 1 member; subscribing unlocks 1 more.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 data-lang-content="zh">如何把資料匯出？</h3>
+        <h3 data-lang-content="en">How do I export my data?</h3>
+        <p data-lang-content="zh">在「設定」點選「匯出資料」，會產生一份 TSV 檔案，內含目前的物品盤點內容。</p>
+        <p data-lang-content="en">Tap "Export Data" in Settings to generate a TSV file with your current inventory.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 data-lang-content="zh">刪除 App 之後，資料還在嗎？</h3>
+        <h3 data-lang-content="en">If I delete the app, is my data still there?</h3>
+        <p data-lang-content="zh">如果家裡還有其他裝置連著同一個家，資料仍在，可以用該裝置重新產生邀請連結。如果這是唯一連著的裝置，目前沒有救援密語畫面可以救回——詳見<a href="index.html#privacy">隱私權政策 §2.5</a>。</p>
+        <p data-lang-content="en">If another device in your household is still connected, your data is safe there, and you can generate a fresh invite from it. If this was the only connected device, there's currently no recovery-phrase screen to get back in — see <a href="index.html#privacy">Privacy Policy §2.5</a> for the full explanation.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 data-lang-content="zh">AI 掃描的結果看起來不太準確</h3>
+        <h3 data-lang-content="en">The AI scan result looks inaccurate</h3>
+        <p data-lang-content="zh">收據掃描與物品辨識都是 AI 產生的建議，尤其是照片模糊或角度不佳時可能誤判。加入前都可以在確認畫面手動修改品項、數量與分類。</p>
+        <p data-lang-content="en">Receipt scans and object recognition are AI-generated suggestions and can misread a blurry or awkwardly angled photo. You can always edit the name, quantity, and category on the confirm screen before anything's added.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 data-lang-content="zh">購買或訂閱遇到問題</h3>
+        <h3 data-lang-content="en">Trouble with a purchase or subscription</h3>
+        <p data-lang-content="zh">所有付款都由 Apple 的 App Store 直接處理，我們看不到你的付款資訊。退款或帳務問題請透過 Apple 的「報告問題」頁面處理；其餘問題歡迎寄信給我們。</p>
+        <p data-lang-content="en">All payments are handled directly by Apple's App Store — we never see your payment details. For refunds or billing issues, use Apple's "Report a Problem" page; for anything else, email us.</p>
+      </div>
+    </section>
+
+    <footer class="doc-footer">
+      <span>HomeTag · <span data-lang-content="zh">個人專案</span><span data-lang-content="en">an independent project</span></span>
+      <span><a href="index.html"><span data-lang-content="zh">隱私權政策</span><span data-lang-content="en">Privacy Policy</span></a></span>
+    </footer>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btnZh = document.getElementById('btn-zh');
+    var btnEn = document.getElementById('btn-en');
+
+    function setLang(lang) {
+      root.setAttribute('data-lang', lang);
+      btnZh.setAttribute('aria-pressed', String(lang === 'zh'));
+      btnEn.setAttribute('aria-pressed', String(lang === 'en'));
+      try { localStorage.setItem('hometag-lang', lang); } catch (e) {}
+    }
+
+    var saved = 'zh';
+    try { saved = localStorage.getItem('hometag-lang') || 'zh'; } catch (e) {}
+    setLang(saved);
+
+    btnZh.addEventListener('click', function () { setLang('zh'); });
+    btnEn.addEventListener('click', function () { setLang('en'); });
+  })();
+</script>
+
+</body></html>
