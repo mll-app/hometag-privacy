@@ -340,6 +340,36 @@ footer.doc-footer {
 }
 .hero p { max-width: 46ch; margin: 0 auto; color: var(--ink-muted); font-size: 1.08rem; }
 
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin: 0 0 48px;
+}
+.screenshot {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.screenshot img { display: block; width: 100%; border-radius: 14px; }
+
+.screenshot-media { position: relative; }
+.demo-photo {
+  position: absolute;
+  left: 5%;
+  top: 63%;
+  width: 74%;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transform: rotate(-4deg);
+}
+.demo-photo img { display: block; width: 100%; border-radius: 5px; }
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
