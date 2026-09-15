@@ -61,7 +61,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-[data-lang-content] { display: none; }
+/* Doubled attribute selector, not a typo: bumps specificity above any
+   single-class component rule (e.g. .status-pill's own `display`), so the
+   default hidden state always wins regardless of what else styles the
+   element, without needing !important. */
+[data-lang-content][data-lang-content] { display: none; }
 html[data-lang="zh"] [data-lang-content="zh"] { display: revert; }
 html[data-lang="en"] [data-lang-content="en"] { display: revert; }
 html[data-lang="zh"] span[data-lang-content="zh"],
