@@ -305,19 +305,6 @@ table.policy-table th {
 }
 .disclaimer-box p:last-child { margin-bottom: 0; }
 
-footer.doc-footer {
-  margin-top: 64px;
-  padding-top: 20px;
-  border-top: 1px solid var(--rule);
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  color: var(--ink-faint);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   section.doc-section { animation: rise 0.4s ease both; }
   @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
